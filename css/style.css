@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 400px;
+  height: 400px;
+  font-size: 20px;
+  padding: 20px;
+  animation: border-animation  1s infinite linear; }
+
+@keyframes border-animation {
+  0% {
+    border: 10px dotted gold; }
+  15% {
+    border: 15px dashed #0088d1; }
+  30% {
+    border: 10px ridge #ff00e6; }
+  45% {
+    border: 20px double #ff0062; }
+  60% {
+    border: 15px groove #00d9ff; }
+  75% {
+    border: 25px inset red; }
+  90% {
+    border: 10px inset #2a7d00; }
+  100% {
+    border: 25px outset #00087d; } }

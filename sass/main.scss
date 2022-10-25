@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 400px;
+  height: 400px;
+  font-size: 20px;
+  padding: 20px;
+  animation: border-animation  1s infinite linear;
+}
+
+
+@keyframes border-animation {
+
+  0% {
+    border:  10px dotted gold;
+  }
+
+  15% {
+    border:  15px dashed rgb(0, 136, 209);
+  }
+
+  30% {
+    border:  10px ridge rgb(255, 0, 230);
+  }
+
+  45% {
+    border:  20px double rgb(255, 0, 98);
+  
+  }
+
+  60% {
+    border:  15px groove rgb(0, 217, 255);
+  
+  }
+
+  75% {
+    border:  25px inset rgb(255, 0, 0);
+  
+  }
+
+  90% {
+    border:  10px inset rgb(42, 125, 0);
+  
+  }
+
+  100% {
+    border:  25px outset rgb(0, 8, 125);
+  
+  }
+
+}
